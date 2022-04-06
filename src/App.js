@@ -38,6 +38,7 @@ const App = () => {
   const [outerboundary, setOuterboundary] = useState(null);
 
   const [showLayer2, setShowLayer2] = useState(true);
+  // eslint-disable-next-line
   const [points_fn, setPoints_fn] = useState(config.GCPs);
   const [points, setPoints] = useState(null);
 
@@ -149,7 +150,10 @@ const App = () => {
             onChange={(event) => setShowLayer2(event.target.checked)}
           />
 
-          <SelectDropDown options={config.outerboundary} handler={handleOuterboundaryChange} />
+          <SelectDropDown 
+            options={config.outerboundary} 
+            clickHandler={handleOuterboundaryChange} 
+          />
           <p className="inline-block pl-10">{outerboundary_fn}</p>
         </div>
       </div>

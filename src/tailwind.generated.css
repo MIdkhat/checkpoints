@@ -417,12 +417,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .relative {
   position: relative;
 }
-.bottom-5 {
-  bottom: 1.25rem;
-}
-.right-5 {
-  right: 1.25rem;
-}
 .right-0 {
   right: 0px;
 }
@@ -540,9 +534,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -610,9 +601,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ring-opacity-5 {
   --tw-ring-opacity: 0.05;
 }
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -663,23 +651,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .lg\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-@media (max-width: 767px) {
-
-  .md\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
   }
