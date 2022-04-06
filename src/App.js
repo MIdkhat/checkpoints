@@ -94,17 +94,14 @@ const App = () => {
 
   const handleOuterboundaryChange = (o) => {
     setOuterboundary_fn(o)
+    //// TODO: find a way to refresh layers
     setShowLayer1(false)
     setShowLayer2(false)
   }
   return (
     <div className="flex flex-row">
       <div className="basis-1/4 m-2.5">
-        <div>
-          {pointsInside && (
-            <Table data={pointsInside} />)
-          }
-        </div>
+          {pointsInside && (<Table data={pointsInside} />)}
       </div>
 
       <div className="basis-3/4 relative">
@@ -138,23 +135,20 @@ const App = () => {
           </Controls>
         </Map>
 
-        <div className="pb-1 absolute bottom-5 right-5">
 
-        </div>
         <div>
           <LayerControl
             label="Outerboundary"
             checked={showLayer1}
             onChange={(event) => setShowLayer1(event.target.checked)}
-          >
-          </LayerControl>
+          />
 
           <LayerControl
             label="Control Points"
             checked={showLayer2}
             onChange={(event) => setShowLayer2(event.target.checked)}
-          >
-          </LayerControl>
+          />
+
           <SelectDropDown options={config.outerboundary} handler={handleOuterboundaryChange} />
           <p className="inline-block pl-10">{outerboundary_fn}</p>
         </div>

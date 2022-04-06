@@ -3,11 +3,7 @@ import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
-
-const SelectDropDown = ({ options, handler }) => {
+const SelectDropDown = ({ options, clickHandler }) => {
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
@@ -30,14 +26,11 @@ const SelectDropDown = ({ options, handler }) => {
                     <div className="py-1">
                         {options.map((o, i) =>
                             <Menu.Item 
-                            onClick={()=> handler(o)}
+                            onClick={()=> clickHandler(o)}
                             key={i}>
                                 {({ active }) => (
                                     <span
-                                        className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-sm'
-                                        )}
+                                        className={`${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'} block px-4 py-2 text-sm`}
                                     >
                                         {o}
                                     </span>
