@@ -1,0 +1,11 @@
+{
+    "center": [133.7751, -25.2744],
+    "zoom": 4,
+    "outerboundary": [
+        "./data/outerboundary_1.geojson",
+        "./data/outerboundary_2.geojson",
+        "./data/outerboundary_3.geojson",
+        "./data/outerboundary_4.geojson"],
+    "GCPs": "./data/_GCPs.csv",
+    "zone": 50
+}

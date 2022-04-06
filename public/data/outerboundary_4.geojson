@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "name": "outerboundary_4",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": null,
+        "description": null,
+        "timestamp": null,
+        "begin": null,
+        "end": null,
+        "altitudeMode": null,
+        "tessellate": -1,
+        "extrude": 0,
+        "visibility": -1,
+        "drawOrder": null,
+        "icon": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [118.965120005503138, -20.372061213783528, 0.089978645555675],
+            [118.962849744892296, -20.375197011252261, 0.089976834133267],
+            [118.968695665965228, -20.377069976256209, 0.089977839961648],
+            [118.969518635436657, -20.371890944237716, 0.089979651384056],
+            [118.965120005503138, -20.372061213783528, 0.089978645555675]
+          ]
+        ]
+      }
+    }
+  ]
+}
